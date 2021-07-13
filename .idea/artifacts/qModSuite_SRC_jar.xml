@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="qModSuite-SRC:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/qModSuite_SRC_jar</output-path>
+    <root id="archive" name="qModSuite-SRC.jar">
+      <element id="module-output" name="qModSuite-SRC" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/lombok.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/jar_files.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/bson-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/gson-2.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/qLib-LATEST.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/Rhea-Plugin.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/common-lang3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/commons-math3-3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/commons-pool2-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/mongodb-driver-core-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/ProtocolLib-v1_7_R4-3.7.0-BETA.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/spigot-api-1.7.10-R0.1-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Sources/Libraries/spigot-server-1.7.10-R0.1-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

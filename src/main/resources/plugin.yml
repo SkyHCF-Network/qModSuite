@@ -1,0 +1,5 @@
+name: qModSuite
+version: 1.0
+author: Created by MineHQ Development Team, Edited by SoNot
+main: net.frozenorb.qmodsuite.qModSuite
+depend: [ qLib ]
