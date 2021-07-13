@@ -157,23 +157,4 @@ public class ModUtils {
          FrozenVisibilityHandler.updateAllTo(player);
       }
    }
-
-   public static void randomTeleport(Player player) {
-      if (StaffItems.RANDOM_TELEPORT.getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.AQUA + "Random Teleport")) {
-         List<Player> players = Bukkit.getOnlinePlayers()
-                 .stream()
-                 .filter(user -> !user.hasPermission("basic.staff"))
-                 .collect(Collectors.toList());
-         Random random = new Random();
-         try {
-            int rand = random.nextInt(players.size());
-            Player playerTP = players.get(rand);
-            player.teleport(playerTP);
-            player.sendMessage(ChatColor.GREEN + "You have been teleported to " + ChatColor.YELLOW + playerTP.getName());
-         } catch (IllegalArgumentException exception) {
-            player.sendMessage(ChatColor.RED + "No avaliable players to teleport to.");
-         }
-      }
-
-   }
 }

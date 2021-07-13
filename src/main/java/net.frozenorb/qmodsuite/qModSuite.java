@@ -11,6 +11,7 @@ import net.frozenorb.qlib.visibility.OverrideAction;
 import net.frozenorb.qlib.visibility.VisibilityAction;
 import net.frozenorb.qmodsuite.listeners.GeneralListener;
 import net.frozenorb.qmodsuite.listeners.PreventionListener;
+import net.frozenorb.qmodsuite.listeners.RandomTeleportListener;
 import net.frozenorb.qmodsuite.nametag.qModSuiteNametagProvider;
 import net.frozenorb.qmodsuite.utils.ModUtils;
 import org.bukkit.entity.Player;
@@ -34,6 +35,7 @@ public class qModSuite extends JavaPlugin {
       FrozenCommandHandler.registerPackage(this, "net.frozenorb.qmodsuite.command");
       this.getServer().getPluginManager().registerEvents(new GeneralListener(), this);
       this.getServer().getPluginManager().registerEvents(new PreventionListener(), this);
+      this.getServer().getPluginManager().registerEvents(new RandomTeleportListener(), this);
       FrozenVisibilityHandler.registerOverride("qmodsuite Override Handler", (target, viewer) -> {
          return ModUtils.isModMode(target) && !ModUtils.isInvis(target) ? OverrideAction.SHOW : OverrideAction.NEUTRAL;
       });
